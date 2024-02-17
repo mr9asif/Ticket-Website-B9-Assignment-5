@@ -19,31 +19,85 @@
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-               
-              </li>
-              <li><a>Item 3</a></li>
+            <ul tabindex="0"  class="  menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 mx-auto">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Distination</a></li>
+              <input class="border rounded-xl pl-1" type="text" name="" id="" placeholder="seacrh">
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-2xl font-extrabold ">P-Ticket</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
+        <div class="navbar-center hidden lg:flex mr-[150px]">
+          <ul class="menu menu-horizontal px-1 m-4">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Distination</a></li>
+            <input class="border rounded-xl pl-4 " type="text" name="" id="" placeholder="seacrh">
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        <div id="bus-btn" class=" cursor-pointer navbar-end border rounded-xl w-[140px] py-2 gap-3 text-[green] bg-green-100 font-bold flex justify-center items-center">
+           <h3>Bus</h3>
+          <img src="./image/bus-icon.png" alt="">
+        </div>
+      </div>
+      <!-- nav bar ends here -->
+
+      <!-- banner starts here -->
+      <div class="banner w-[full] h-[500px] flex flex-col justify-center items-center text-center gap-[50px] ">
+        <div class=" flex flex-col justify-center items-center text-center gap-[20px] mb-[100px]">
+          <h1 class="text-[40px] text-white font-bold">End-to-End Travel with</h1>
+          <h1 class="mt-[-20px] text-[40px] text-green-300 font-bold ">P Paribahan</h1>
+          <p class="text-white text-[12px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          <div class="btn bg-green-400">Buy Tickets</div>
+        </div>
+      </div>
+      <!-- card here -->
+      <div class="flex justify-around items-center gap-2 mt-[-60px]">
+        <!-- card 1 -->
+        <div class="flex justify-center items-center w-[280px] gap-4 h-[120px] border border-b-[4px] border-b-green-500 rounded-[30px] bg-slate-100">
+          <img class="w-[50px]" src="./image/people.png" alt="">
+          <div>
+            <h1 class="font-extrabold text-2xl">500k+</h1>
+            <p class="text-[11px] font-semibold text-slate-400">Registered users</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class=" bg-slate-100 flex justify-center items-center w-[280px] gap-4 h-[120px] border border-b-[4px] border-b-green-500 rounded-[30px]">
+          <img class="w-[50px]" src="./image/ticket-cupon.png" alt="">
+          <div>
+            <h1 class="font-extrabold text-2xl">1.7 lacks</h1>
+            <p class="text-[11px] font-semibold text-slate-400">Tickets Sold </p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class=" bg-slate-100 flex justify-center items-center w-[280px] gap-4 h-[120px] border border-b-[4px] border-b-green-500 rounded-[30px]">
+          <img class="w-[50px]" src="./image/stoppage.png" alt="">
+          <div>
+            <h1 class="font-extrabold text-2xl">80k+</h1>
+            <p class="text-[11px] font-semibold text-slate-400">Rental Partners</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- offer card here -->
+      <div class="">
+        <!-- card 1 -->
+        <div class="w-[500px] h-[135px] border rounded-[20px] bg-yellow-300 flex justify-center items-center gap-2">
+          <div class="w-[45%]">
+            <h1 class="text-3xl font-extrabold">15% OFF</h1>
+          <h4 class="text-[14px] font-bold text-slate-600">on your next purchase</h4>
+          <p class="text-[12px] text-slate-500">use by January 2024</p>
+          </div>
+          <!-- divider -->
+          <div>
+            <img class="w-[26px]" src="./image/info-devider.png" alt="">
+          </div>
+          <!-- coupon -->
+          <div>
+            <h1 class="font-extrabold texl-2xl">NEWS15</h1>
+            <p class="text-slate-300 text-[14px]">Coupon Code</p>
+          </div>
         </div>
       </div>
    </header>

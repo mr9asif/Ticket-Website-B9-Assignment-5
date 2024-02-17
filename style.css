@@ -9,3 +9,11 @@
 body{
  font-family: "Poppins", sans-serif ;
 }
+.banner{
+    background-image:url(./image/banner.png);
+    background-size: cover;
+    border-radius: 16px;
+}
+#bus-btn:hover{
+    background-color: aliceblue;
+}
