@@ -10,8 +10,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
      
 </head>
-<body class="max-w-screen-lg mx-auto">
-   <header>
+<body >
+   <header class="max-w-screen-lg mx-auto">
       <!-- navbar starts here -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -81,28 +81,111 @@
       </div>
 
       <!-- offer card here -->
-      <div class="">
+      <h1 class="text-3xl font-extrabold mb-10 mt-16 text-center">Best offers for you</h1>
+      <div class="flex justify-around items-center ">
         <!-- card 1 -->
-        <div class="w-[500px] h-[135px] border rounded-[20px] bg-yellow-300 flex justify-center items-center gap-2">
-          <div class="w-[45%]">
+        <div class="w-[500px] h-[158px] border rounded-[20px] bg-yellow-400 flex justify-center items-center gap-2">
+          <div class="w-[45%] flex flex-col justify-center items-center gap-1">
             <h1 class="text-3xl font-extrabold">15% OFF</h1>
           <h4 class="text-[14px] font-bold text-slate-600">on your next purchase</h4>
           <p class="text-[12px] text-slate-500">use by January 2024</p>
           </div>
           <!-- divider -->
           <div>
-            <img class="w-[26px]" src="./image/info-devider.png" alt="">
+            <img class="w-[30px] text-white" src="./image/info-devider.png" alt="">
           </div>
           <!-- coupon -->
-          <div>
+          <div class="flex flex-col justify-center items-center gap-1">
             <h1 class="font-extrabold texl-2xl">NEWS15</h1>
-            <p class="text-slate-300 text-[14px]">Coupon Code</p>
+            <p class="text-slate-400 text-[14px]">Coupon Code</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-[500px] h-[158px] border rounded-[20px] bg-pink-400 flex justify-center items-center gap-2">
+          <div class="w-[45%] flex flex-col justify-center items-center gap-1">
+            <h1 class="text-3xl font-extrabold">15% OFF</h1>
+          <h4 class="text-[14px] font-bold text-slate-600">on your next purchase</h4>
+          <p class="text-[12px] text-slate-500">use by January 2024</p>
+          </div>
+          <!-- divider -->
+          <div>
+            <img class="w-[30px]" src="./image/info-devider.png" alt="">
+          </div>
+          <!-- coupon -->
+          <div class="flex flex-col justify-center items-center gap-1">
+            <h1 class="font-extrabold texl-2xl">NEWS15</h1>
+            <p class="text-slate-400 text-[14px]">Coupon Code</p>
           </div>
         </div>
       </div>
+      <div class="flex justify-center items-center m-14" >
+        <button class="btn border-green-500 ">See All Offers</button>
+      </div>
    </header>
-   <main>
+   <main >
+    <!-- main form start here -->
+    <div class=" border-t-4   border-green-500 w-full h-[1000px]  rounded-t-[50px]">
+      <div class=" flex flex-col justify-center items-center gap-2 mt-9 mb-8">
+        <h1 class="text-3xl font-extrabold">P.H Paribahan</h1>
+        <p class="text-[12px] text-slate-600">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+      </div>
 
+           <!-- ticket form starts here -->
+           <!-- form header -->
+           <!-- left form parent -->
+           <div class="w-[70%] flex justify-around items-center gap-0 mx-auto shadow-md  bg-white">
+            <div class="w-[70%] h-[400px]   rounded-[20px] ">
+              <div class=" w-[99%] m-4 px-3 h-[100px] flex justify-between items-center   ">
+                <div class="flex gap-3 ">
+                  <img class="w-[40px] h-[50px]" src="./image/bus-logo.png" alt="">
+                  <div>
+                    <h1 class="text-2xl font-bold">Greenline Paribahan</h1>
+                    <p class="text-[12px] text-slate-400">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 bg-green-200 w-[180px] p-3 rounded-lg ">
+                  <img src="./image/seat-gray.png" alt="">
+                  <div class="flex gap-1"><span>40</span><h1 class="font-bold">Seats left</h1></div>
+                </div>
+             
+              </div>
+                   <!-- fill up form starts here -->
+                   <div class=" w-[98%] px-3 h-[240px] border rounded-lg bg-slate-300  m-4 ">
+                    
+                     <div class="flex justify-between p-4 my-2 ">
+                      <h1>Route</h1>
+                      <h1>Dhaka-Sylete</h1>
+                     </div><hr class="border">
+                     <div class="flex justify-between p-4 my-2">
+                      <h1>Deperture</h1>
+                      <h1>9:00pm</h1>
+                     </div><hr class="border">
+                     <!--  -->
+                      <div class="flex justify-between items-center mt-8">
+                        <div><h1 class="border-2 w-[210px] p-2 bg-slate-200 rounded-md ">Boarding Point - Laxmipur</h1></div>
+                      <div><h1 class="border-2 w-[210px] p-2 bg-slate-200 rounded-md ">Dropping Point - Bogura</h1></div>
+                      <div><h1 class="border-2 w-[210px] p-2 bg-slate-200 rounded-md ">Est. Time - 11 Hour</h1></div>
+                      </div>
+                    
+                   </div>
+             </div>
+             <!-- img -->
+             <div><img src="./image/info-devider.png" alt=""></div>
+             <!-- right -->
+             <div class="flex flex-col justify-center items-center gap-1">
+              <img src="./image/fare.png" alt="">
+              <h1 class="font-bold text-2xl">550</h1><h1 class="font-bold text-2xl">taka</h1>
+              <h1 class="text-slate-400">per seat</h1>
+             </div>
+             
+           </div>
+      
+        <!-- main form -->
+
+
+      
+    </div>
+   
    </main>
    <footer>
 
