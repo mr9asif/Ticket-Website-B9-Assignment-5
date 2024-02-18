@@ -11,7 +11,7 @@
      
 </head>
 <body >
-   <header class="max-w-screen-lg mx-auto">
+   <header  class="max-w-screen-lg mx-auto homes">
       <!-- navbar starts here -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -47,9 +47,9 @@
       <div class="banner w-[full] h-[500px] flex flex-col justify-center items-center text-center gap-[50px] ">
         <div class=" flex flex-col justify-center items-center text-center gap-[20px] mb-[100px]">
           <h1 class="text-[40px] text-white font-bold">End-to-End Travel with</h1>
-          <h1 class="mt-[-20px] text-[40px] text-green-300 font-bold ">P Paribahan</h1>
+          <h1 class="mt-[-20px] text-[40px] text-green-400 font-bold ">P Paribahan</h1>
           <p class="text-white text-[12px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-          <div class="btn bg-green-400">Buy Tickets</div>
+          <div id="but-btn" class="btn bg-green-400">Buy Tickets</div>
         </div>
       </div>
       <!-- card here -->
@@ -84,7 +84,7 @@
       <h1 class="text-3xl font-extrabold mb-10 mt-16 text-center">Best offers for you</h1>
       <div class="flex justify-around items-center ">
         <!-- card 1 -->
-        <div class="w-[500px] h-[158px] border rounded-[20px] bg-yellow-400 flex justify-center items-center gap-2">
+        <div class="w-[450px] h-[158px] border rounded-[20px] bg-yellow-400 flex justify-center items-center gap-2">
           <div class="w-[45%] flex flex-col justify-center items-center gap-1">
             <h1 class="text-3xl font-extrabold">15% OFF</h1>
           <h4 class="text-[14px] font-bold text-slate-600">on your next purchase</h4>
@@ -101,9 +101,9 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="w-[500px] h-[158px] border rounded-[20px] bg-pink-400 flex justify-center items-center gap-2">
+        <div class="w-[450px] h-[158px] border rounded-[20px] bg-pink-400 flex justify-center items-center gap-2">
           <div class="w-[45%] flex flex-col justify-center items-center gap-1">
-            <h1 class="text-3xl font-extrabold">15% OFF</h1>
+            <h1 class="text-3xl font-extrabold">20% OFF</h1>
           <h4 class="text-[14px] font-bold text-slate-600">on your next purchase</h4>
           <p class="text-[12px] text-slate-500">use by January 2024</p>
           </div>
@@ -113,7 +113,7 @@
           </div>
           <!-- coupon -->
           <div class="flex flex-col justify-center items-center gap-1">
-            <h1 class="font-extrabold texl-2xl">NEWS15</h1>
+            <h1 class="font-extrabold texl-2xl">Couple 20</h1>
             <p class="text-slate-400 text-[14px]">Coupon Code</p>
           </div>
         </div>
@@ -122,7 +122,7 @@
         <button class="btn border-green-500 ">See All Offers</button>
       </div>
    </header>
-   <main >
+   <main class="homes" >
     <!-- main form start here -->
     <div class=" border-t-4   border-green-500 w-full h-[600px]  rounded-t-[50px]">
       <div class=" flex flex-col justify-center items-center gap-2 mt-9 mb-8">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="flex gap-2 bg-green-200 w-[180px] p-3 rounded-lg ">
                   <img src="./image/seat-gray.png" alt="">
-                  <div class="flex gap-1"><span>40</span><h1 class="font-bold">Seats left</h1></div>
+                  <div class="flex gap-1"><span class="font-bold" id="seat-left">40</span><h1 class="font-bold">Seats left</h1></div>
                 </div>
              
               </div>
@@ -187,7 +187,7 @@
     </div>
     <!-- Buss Seat form starts -->
       <!-- parent clss -->
-     <div class="max-w-screen-lg mx-auto  border shadow-md bg-white ">
+     <div id="bus-ticket" class="max-w-screen-lg mx-auto  border shadow-md bg-white ">
         <!-- left main seat form -->
         <!-- ------------ -->
         <!-- main parent -->
@@ -288,30 +288,34 @@
            <div class="w-full">
              <!-- upper parrt -->
            <div class="bg-slate-100">
-             <div class="grid grid-cols-3 justify-around py-4 pl-5 items-center  gap-4 ">
-               <h1>Seat <span>0</span></h1>
+             <div id="seat-parent" class="grid grid-cols-3 justify-around py-4 pl-5 items-center  gap-4 ">
+               <h1 class="font-bold">Seat <span id="seat-count" class="font-bold">0</span></h1>
                <h1>class</h1>
                <h1>Price</h1>
-               <h1>C2</h1>
+               <h1 id="pseat">A12</h1>
+               <h1>Business</h1>
+               <h1>550</h1>
+               <h1>A34</h1>
                <h1>Economy</h1>
                <h1>550</h1>
-               <h1>C2</h1>
-               <h1>Economy</h1>
-               <h1>550</h1>
-             </div><hr class="border">
+               </div>
+               <ul id="ul" class="text-[14px] font-bold ml-5 flex gap-4">Selected Seats :</ul>
+             <hr class="border">
              <!-- calculate part -->
              <div class="flex justify-around items-center px-6">
                <h1 class="font-semibold">Total Price</h1>
-               <h1 class="font-semibold">0</h1>
+               <h1 id="total-price" class="font-semibold">0</h1>
+             </div>
+             
+             <div class="flex justify-around items-center px-8 my-3" >
+               <input class="w-[200px] border-2 rounded-xl py-1 text-sm ml-10 text-center" type="text" name="" id="coupon" placeholder="Have any Coupon?" disabled>
+               <button id="apply" class="border bg-green-400 p-2 text-[12px] font-semibold mr-12 rounded-md disabled-button" disabled>Apply</button>
+
              </div>
              <div class="flex justify-around items-center px-8 my-3">
-               <h1 class="font-semibold">Discount Price</h1>
-               <h1 class="font-semibold">0</h1>
-             </div>
-             <div class="flex justify-around items-center px-8 my-3">
-               <input class="w-[200px] border-2 rounded-xl py-1 text-sm ml-10 text-center" type="text" name="" id="" placeholder="Have any Coupon?">
-               <button class="border bg-green-400 p-2 text-[12px] font-semibold mr-12 rounded-md">Apply</button>
-             </div>
+              <h1 class="font-semibold">Discount Price</h1>
+              <h1 class="font-semibold">0</h1>
+            </div>
              <div class="flex justify-around items-center px-8 my-3">
                <h1 class="font-semibold">Grand Toal</h1>
                <h1 class="font-semibold">0</h1>
@@ -319,14 +323,14 @@
            </div>
            <!-- lower part -->
            <div class="">
-             <h1 class="text-xl font-semibold my-1 ">Passenger name*</h1>
-             <input class="border-2 rounded-md p-2 text-left w-full" type="text" placeholder="Enter your name">
-             <h1 class="text-xl font-semibold my-1 ">Phone Number*</h1>
-             <input class="border-2 rounded-md p-2 text-left w-full" type="number" placeholder="Enter your email">
+             <h1  class="text-xl font-semibold my-1 ">Passenger name*</h1>
+             <input id="name" class="border-2 rounded-md p-2 text-left w-full" type="text" placeholder="Enter your name" required>
+             <h1  class="text-xl font-semibold my-1 ">Phone Number*</h1>
+             <input id="number"  class="border-2 rounded-md p-2 text-left w-full" type="number" placeholder="Enter your number" required>
              <h1 class="text-xl font-semibold my-1 ">Email Id*</h1>
-             <input class="border-2 rounded-md p-2 text-left w-full" type="email" placeholder="Enter your Email">
+             <input id="email" class="border-2 rounded-md p-2 text-left w-full" type="email" placeholder="Enter your Email" required>
            </div>
-           <button class="text-white font-semibold text-2xl w-full bg-green-500 p-2 rounded-xl my-4">Next</button>
+           <button id="now-btn" class="text-white font-semibold text-2xl w-full bg-green-500 p-2 rounded-xl my-4"  disabled>Next</button>
            <div class="flex justify-between items-center px-2 underline">
              <p class="text-[15px] text-slate-400">Terms and Conditions</p>
              <p class="text-[15px] text-slate-400">Cancellation Policy</p>
@@ -342,7 +346,7 @@
      </div>
    
    </main>
-   <footer class="bg-black w-full h-[400px]">
+   <footer class="bg-black w-full h-[400px] mt-6 homes">
       <!-- footer parent upper -->
       <div class=" max-w-screen-lg mx-auto flex justify-between items-center py-14">
         <!-- left -->
