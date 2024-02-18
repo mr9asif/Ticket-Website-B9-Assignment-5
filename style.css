@@ -78,12 +78,49 @@ header {
 
 
 /* Responsive styles for mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 568px) {
     /* Hide desktop navbar */
     .navbar-center {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #offer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #ph{
+        width: 90%;
+    }
+    #ce{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .aa{
+        font-size: 9px;
+        padding: 1px;
+    }
+    .a{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        gap: 5px;
+        
+    }
+    .kbd{
+        width: 20px;
+        border:1px solid;
+        border-radius: 4px;
+        padding:2px 2px;
+    }
+    #bannerr{
+        background-size:cover;
+        border-radius: 16px;
+        
     }
 
     .navbar-end {
