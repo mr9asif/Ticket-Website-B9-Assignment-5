@@ -18,10 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const maxSeats = 4; // Maximum number of seats allowed
      let seatLift = 40;
     //  -----------
-    const name = document.getElementById('name');
-    const number = document.getElementById('number');
-    const email = document.getElementById('email');
-    const nextBtn = document.getElementById('next-btn')
+   
 // --------------
     for (const seat of seats) {
         seat.addEventListener('click', function() {
@@ -103,7 +100,8 @@ nextBtn.addEventListener('click',function(){
 //  congratulation Button
 const congraBtn = document.getElementById('con');
 congraBtn.addEventListener('click',function(){
-    getRemoveCon()
+    getRemoveCons()
+    PreviousData()
 })
 
 // get hidden
@@ -116,7 +114,7 @@ congraBtn.addEventListener('click',function(){
      }
  }
 //  Remove Hidden{
-    function getRemoveCon(){
+    function getRemoveCons(){
         const hideBtns= document.getElementsByClassName('homes');
         const hidenCon = document.getElementById('con');
         hidenCon.classList.add('hidden')
@@ -125,7 +123,25 @@ congraBtn.addEventListener('click',function(){
          }
     }
 
+// remove previous data
+  function PreviousData(){
+    const passengerNameInput = document.getElementById("name");
+    const phoneNumberInput = document.getElementById("number");
+    const emailInput = document.getElementById("email");
+    const nextButton = document.getElementById("now-btn");
 
+    passengerNameInput.value = ""; // Reset passenger name input
+    phoneNumberInput.value = ""; // Reset phone number input
+    emailInput.value = ""; // Reset email input
+    nextButton.disabled = true;
+    const parent = document.getElementById('ul');
+    parent.innerHTML = `Selected Seats :${''}`;
+    currentSeatNow = 0;
+    seatLift = 40;
+    const currentSeatText = document.getElementById('seat-count');
+    currentSeatText.innerText = currentSeatNow;
+    
+  }
 
 // get ticket 
 function totalPrice() {
