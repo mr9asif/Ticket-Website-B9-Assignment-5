@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     // -------------------
                     
                     //--------
-                    if(currentSeatNow === maxSeats){
+                    if(currentSeatNow === maxSeats ){
 
                     } 
 
@@ -103,6 +103,13 @@ congraBtn.addEventListener('click',function(){
     getRemoveCons()
     PreviousData()
 })
+// remove disabled
+  function removeDisable(){
+    const inPut = document.getElementById('coupon');
+    inPut.disabled=false;
+  }
+//   coupun
+
 
 // get hidden
  function getHiddenHome(){
@@ -140,8 +147,30 @@ congraBtn.addEventListener('click',function(){
     seatLift = 40;
     const currentSeatText = document.getElementById('seat-count');
     currentSeatText.innerText = currentSeatNow;
-    
-  }
+    const pSeatText = document.getElementById('seat-left');
+    pSeatText.innerText = seatLift;
+    const seats = document.querySelectorAll('.kbd');
+    for(const seat of seats){
+        seat.classList.remove('bg-green-400')
+    }
+    const tPtice = 0;
+    const tPriceText = document.getElementById('total-price');
+    tPriceText.innerText = tPtice;
+    currentTotalPrice = 0;
+    const currentPriceText = document.getElementById('total-price');
+    currentPriceText.innerText = currentTotalPrice;
+
+    // Clear clicked seats
+    // const clic = [];
+    // const seates = document.getElementsByClassName('kbd');
+    //  for(const seaat of seates){
+    //     console.log(seaat);
+      
+
+
+    // // }
+ 
+}
 
 // get ticket 
 function totalPrice() {
