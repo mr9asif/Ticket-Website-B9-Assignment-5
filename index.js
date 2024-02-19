@@ -109,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     const grandTotal = document.getElementById('grand-total');
                                     grandTotal.innerText = 2200 - coupleDis;
                                 }
+                                applyHiddenBtn()
                             }else{
                                 alert('Give the write coupon first')
                             }
@@ -145,7 +146,7 @@ nextBtn.addEventListener('click',function(){
     getHiddenHome()
     setTimeout(function() {
         location.reload();
-    }, 2000)
+    }, 1300)
  })
 //  congratulation Button
 const congraBtn = document.getElementById('con');
