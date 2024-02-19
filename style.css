@@ -70,6 +70,12 @@ header {
     border: none;
     cursor: pointer;
 }
+.list4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 #now-btn:disabled {
     background-color: #CCCCCC;}

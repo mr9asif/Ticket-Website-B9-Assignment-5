@@ -56,10 +56,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     const nseats = seat.innerText;
                     console.log(nseats);
                     const li = document.createElement('li');
-                    const parent = document.getElementById('ul');
+                   
+                    const parent = document.getElementById('list');
                     parent.appendChild(li);
-                    li.innerText =`${nseats}`
-
+                    li.innerText =`${nseats} ----      Economic   ----      BDT 550`
+                    
                     // ---------------
                     clickedSeats.push(seat);
                     seat.classList.add('bg-green-400')
