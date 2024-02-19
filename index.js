@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
     for (const seat of seats) {
         seat.addEventListener('click', function() {
             if (!clickedSeats.includes(seat)) {
+                // -------------------------------
+
+
+
                 // -----------
                 const passengerNameInput = document.getElementById("name");
                 const phoneNumberInput = document.getElementById("number");
@@ -63,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     currentPriceText.innerText = updatedTotalPrice;
                     console.log(updatedTotalPrice);
                     console.log(currentPrice);
+                   
                     // update seats
                     currentSeatNow = updateSeat(currentSeatNow, 1); 
                     const currentSeatText = document.getElementById('seat-count')
@@ -73,9 +78,50 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.log(pSeatText);
                     pSeatText.innerText =  seatLift;
                     // -------------------
-                    
+                     
                     //--------
                     if(currentSeatNow === maxSeats ){
+                        // ---------------
+                        
+
+                        // -------apply btn---------
+                        
+                        const applybtn = document.getElementById('apply');
+                        applybtn.addEventListener('click',function(){
+                            const couponText =   document.getElementById('coupon');
+                            const couponTask = couponText.value;
+                            
+                            if(couponTask === 'NEWS15' || couponTask === 'Couple 20'){
+                                if(couponTask === 'NEWS15'){
+                                    const currentdis = 2200 * 0.15;
+                                   const disPriceText = document.getElementById('discount-price');
+                                    // const disPRice = parseInt(disPriceText.innerText);
+                                    disPriceText.innerText = currentdis
+                                    const grandTotal = document.getElementById('grand-total');
+                                    grandTotal.innerText = 2200 - currentdis;
+                                
+                                }else if(couponTask === 'Couple 20'){
+                                    const coupleDis = 2200 * 0.20;
+                                    const disUp = document.getElementById('discount-price');
+                                    disUp.innerText = coupleDis;
+                                    const grandTotal = document.getElementById('grand-total');
+                                    grandTotal.innerText = 2200 - coupleDis;
+                                }
+                            }else{
+                                alert('Give the write coupon first')
+                            }
+                        
+   
+                        })
+
+ 
+
+                    
+                      
+
+                    // apply btn close------------------------
+
+                        // -----------------
 
                     } 
 
@@ -196,7 +242,9 @@ function reduceSeat(leftSeats,SeatReduce){
     return leftSeats - SeatReduce;
 }
 
-// next btn 
+// Apply btn
+
+
 
 
 

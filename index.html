@@ -306,19 +306,19 @@
                <h1 class="font-semibold">Total Price</h1>
                <h1 id="total-price" class="font-semibold">0</h1>
              </div>
-             
+              <h1 class="text-[16px] py-4 ml-4 font-semibold">Select 4 Seat to Get the Discount</h1>
              <div class="flex justify-around items-center px-8 my-3" >
-               <input class="w-[200px] border-2 rounded-xl py-1 text-sm ml-10 text-center" type="text" name="" id="coupon" placeholder="Have any Coupon?" disabled>
-               <button id="apply" class="border bg-green-400 p-2 text-[12px] font-semibold mr-12 rounded-md disabled-button" disabled>Apply</button>
+               <input class="w-[200px] border-2 rounded-xl py-1 text-sm ml-10 text-center" type="text" name="" id="coupon" placeholder="Have any Coupon?">
+               <button id="apply" class="border bg-green-400 p-2 text-[12px] font-semibold mr-12 rounded-md disabled-button" >Apply</button>
 
              </div>
              <div class="flex justify-around items-center px-8 my-3">
               <h1 class="font-semibold">Discount Price</h1>
-              <h1 class="font-semibold">0</h1>
+              <h1 class="font-semibold"><span id="discount-price" class="font-semibold">0</span></h1>
             </div>
              <div class="flex justify-around items-center px-8 my-3">
                <h1 class="font-semibold">Grand Toal</h1>
-               <h1 class="font-semibold">0</h1>
+               <h1 class="font-semibold"><span id="grand-total" class="font-semibold">0</span></h1>
              </div>
            </div>
            <!-- lower part -->
@@ -389,6 +389,9 @@
     </div>
    </div>
 
+
+   <script src="apply.js"></script>
     <script src="index.js"></script>
+    
 </body>
 </html>
