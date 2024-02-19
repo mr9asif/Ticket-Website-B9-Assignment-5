@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         busTicketDiv.scrollIntoView({ behavior: "smooth" });
     });
 
+
+
     const seats = document.querySelectorAll('.kbd');
     const clickedSeats = [];
     let currentSeatNow = 0;
@@ -141,13 +143,16 @@ const nextBtn = document.getElementById('now-btn');
  console.log('next');
 nextBtn.addEventListener('click',function(){
     getHiddenHome()
-       
+    setTimeout(function() {
+        location.reload();
+    }, 2000)
  })
 //  congratulation Button
 const congraBtn = document.getElementById('con');
 congraBtn.addEventListener('click',function(){
     getRemoveCons()
     PreviousData()
+
 })
 // remove disabled
   function removeDisable(){
