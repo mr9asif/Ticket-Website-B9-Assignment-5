@@ -177,7 +177,9 @@ congraBtn.addEventListener('click',function(){
     }
 
 // remove previous data
+
   function PreviousData(){
+    currentSeatNow = 0;
     const passengerNameInput = document.getElementById("name");
     const phoneNumberInput = document.getElementById("number");
     const emailInput = document.getElementById("email");
@@ -189,7 +191,7 @@ congraBtn.addEventListener('click',function(){
     nextButton.disabled = true;
     const parent = document.getElementById('ul');
     parent.innerHTML = `Selected Seats :${''}`;
-    currentSeatNow = 0;
+    
     seatLift = 40;
     const currentSeatText = document.getElementById('seat-count');
     currentSeatText.innerText = currentSeatNow;
@@ -198,7 +200,12 @@ congraBtn.addEventListener('click',function(){
     const seats = document.querySelectorAll('.kbd');
     for(const seat of seats){
         seat.classList.remove('bg-green-400')
+        
     }
+    // remove clicked seats-----
+
+    // ------------
+
     const tPtice = 0;
     const tPriceText = document.getElementById('total-price');
     tPriceText.innerText = tPtice;
@@ -207,16 +214,21 @@ congraBtn.addEventListener('click',function(){
     currentPriceText.innerText = currentTotalPrice;
 
     // Clear clicked seats
-    // const clic = [];
-    // const seates = document.getElementsByClassName('kbd');
-    //  for(const seaat of seates){
-    //     console.log(seaat);
-      
-
-
-    // // }
+    // discount remove
+    const disUp = document.getElementById('discount-price');
+    disUp.innerText = 0;
+    const grandTotal = document.getElementById('grand-total');
+    grandTotal.innerText = 0;
+    const couponText =   document.getElementById('coupon');
+    couponText.value='';
  
 }
+// --------
+
+
+
+
+// -------
 
 // get ticket 
 function totalPrice() {
